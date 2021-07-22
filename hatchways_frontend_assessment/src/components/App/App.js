@@ -10,7 +10,8 @@ function App() {
 
 	useEffect(() => {
 		let mounted = true;
-		axios.get("https://api.hatchways.io/assessment/students")
+		axios
+			.get("https://api.hatchways.io/assessment/students")
 			.then((returnData) => {
 				// setData(JSON.stringify(returnData.data.students)); /*data visualization*/
 				if (mounted) {
@@ -24,8 +25,10 @@ function App() {
 	}, []);
 
 	return (
-		<div className = "app">
-			<StudentList data={data} />
+		<div className="app">
+			<div id="AppWrapper">
+				<StudentList data={data} />
+			</div>
 		</div>
 	);
 }

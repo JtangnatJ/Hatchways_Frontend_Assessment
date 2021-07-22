@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;800&display=swap');
+
+#StudentInfo {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid lightgrey;
+    min-height: 30%;
+    width: 100%;
+}
+
+#picWrapper {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: auto;
+    width: 20%;
+}
+
+#pic {
+    border: 1px solid grey;
+    border-radius: 50%;
+    margin: 15% 10%;
+}
+
+#StudentText {
+    font-family: 'Raleway', sans serif;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+#name {
+    margin-left: -5%;
+    font-size: xx-large;
+    font-stretch: expanded;
+    font-weight: 800;
+    margin-bottom: 2%;;
+}
+
+#email, #company, #skill, #average {
+    font-size: small;
+    font-weight: 200;
+}
+
+
+
