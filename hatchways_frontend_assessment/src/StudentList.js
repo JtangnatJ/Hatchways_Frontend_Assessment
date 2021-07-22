@@ -1,7 +1,8 @@
 import React from 'react';
 import Student from './Student.js';
+import './StudentList.css';
 
-const Students = (props) => (
+const StudentList = (props) => (
     <div id="studentList">
         {props.data.map((student, index) => (
             <Student student={student} key={index} />
@@ -9,4 +10,4 @@ const Students = (props) => (
     </div>
 );
 
-export default Students;
+export default StudentList;

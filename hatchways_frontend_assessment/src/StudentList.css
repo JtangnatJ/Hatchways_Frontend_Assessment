@@ -1,0 +1,9 @@
+#studentList {
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    overflow-y: auto;
+    max-height: 80%;
+    max-width: 80%;
+    margin: auto;
+}
