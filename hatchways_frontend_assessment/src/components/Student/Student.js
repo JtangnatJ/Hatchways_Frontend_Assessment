@@ -3,8 +3,6 @@ import "./Student.css";
 
 const Student = (props) => {
 	const student = props.student;
-    const fullName = student.firstName + ' ' + student.lastName;
-    // const 
 	const grades = student.grades;
 	const total = grades.reduce((a, b) => parseInt(a) + parseInt(b));
 	const average = total / grades.length;
@@ -16,7 +14,7 @@ const Student = (props) => {
 			</div>
 			<div id="StudentText">
 				<div id="name">
-                    {fullName.toUpperCase()}
+                    {student.fullName}
 					{/* {student.firstName} {student.lastName} */}
 				</div>
 				<div id="email">Email: {student.email}</div>

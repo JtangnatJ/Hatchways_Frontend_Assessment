@@ -4,7 +4,7 @@ import "./StudentList.css";
 
 const StudentList = (props) => (
 	<div id="StudentList">
-		{props.data.map((student, index) => (
+		{props.students.map((student, index) => (
 			<Student student={student} key={index} />
 		))}
 	</div>
