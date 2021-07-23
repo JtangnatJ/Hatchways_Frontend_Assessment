@@ -2,27 +2,21 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import "./App.css";
 import StudentList from "../StudentList/StudentList.js";
-
-// const axios = require("axios");
+import { fetchStudents } from "../../utils/fetch.js";
 
 function App() {
 	const [data, setData] = useState([]);
 
 	useEffect(() => {
-		let mounted = true;
-		axios
-			.get("https://api.hatchways.io/assessment/students")
-			.then((returnData) => {
-				// setData(JSON.stringify(returnData.data.students)); /*data visualization*/
-				if (mounted) {
-					setData(returnData.data.students);
-					mounted = false;
-				}
+		fetchStudents("https://api.hatchways.io/assessment/students")
+			.then((response) => {
+				console.log(response.students);
+				setData(response.students);
 			})
 			.catch((error) => {
 				console.log(error);
 			});
-	}, []);
+	}, [fetchStudents]);
 
 	return (
 		<div className="app">
