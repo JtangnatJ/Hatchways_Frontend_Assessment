@@ -10,6 +10,7 @@
 
 #AppWrapper {
     display: flex;
+    flex-direction: column;
 	border-radius: 20px;
 	background-color: white;
     overflow: hidden;

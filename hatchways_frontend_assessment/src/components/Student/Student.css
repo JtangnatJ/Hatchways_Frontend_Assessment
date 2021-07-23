@@ -24,16 +24,17 @@
 
 #StudentText {
     font-family: 'Raleway', sans serif;
-    margin-left: 5%;
-    margin-top: 2%;
+    margin-left: 15px;
+    margin-top: 10px;
+    min-height: 125px;
 }
 
 #name {
-    margin-left: -5%;
+    margin-left: -15px;
     font-size: xx-large;
     font-stretch: expanded;
     font-weight: 800;
-    margin-bottom: 2%;;
+    margin-bottom: 5px;
 }
 
 #email, #company, #skill, #average {
