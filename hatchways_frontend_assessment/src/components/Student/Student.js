@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./Student.css";
 import TestScoresButton from "../TestScoresButton/TestScoresButton.js";
 import TestScores from "../TestScores/TestScores.js";
