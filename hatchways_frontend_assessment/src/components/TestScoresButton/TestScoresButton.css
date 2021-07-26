@@ -5,6 +5,7 @@
     height: 100%;
 }
 
-.TestScoresButton {
-    justify-self: flex-start;
+.testScoresButton {
+    border: none;
+    background-color: white;
 }

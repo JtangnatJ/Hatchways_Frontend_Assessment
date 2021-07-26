@@ -1,5 +1,7 @@
 import React from "react";
-import './TestScoresButton.css'
+import Minus from "./Minus/Minus.js";
+import Plus from "./Plus/Plus.js";
+import './TestScoresButton.css';
 
 const TestScoresButton = (props) => {
 	const [expanded, setExpanded] = React.useState(false);
@@ -13,7 +15,7 @@ const TestScoresButton = (props) => {
 	return (
 		<div className="ButtonContainer">
 			<button className="testScoresButton" type="button" onClick={handleClick}>
-				{expanded ? '-' : '+'}
+				{expanded ? <Minus /> : <Plus />}
 			</button>
 		</div>
 	);
