@@ -12,22 +12,21 @@ const Student = (props) => {
     const [displayTestScores, setDisplayTestScores] = React.useState(false);
 
     const handleTestScores = (state) => {
-        console.log(state);
         setDisplayTestScores(state);
     }
 
 	return (
-		<div id="StudentInfo">
-			<div id="picWrapper">
-				<img id="pic" src={student.pic} alt="Profile Pic" />
+		<div className="StudentInfo">
+			<div className="picWrapper">
+				<img className="pic" src={student.pic} alt="Profile Pic" />
 			</div>
-			<div id="StudentText">
-				<div id="name">{student.fullName}</div>
-				<div id="email">Email: {student.email}</div>
-				<div id="company"> Company: {student.company}</div>
-				<div id="skill">Skill: {student.skill}</div>
-				<div id="average">Average: {average}%</div>
-                <TestScores showScores={displayTestScores} />
+			<div className="StudentText">
+				<div className="name">{student.fullName}</div>
+				<div className="email">Email: {student.email}</div>
+				<div className="company"> Company: {student.company}</div>
+				<div className="skill">Skill: {student.skill}</div>
+				<div className="average">Average: {average}%</div>
+                <TestScores showScores={displayTestScores} grades={grades} />
 			</div>
 			<TestScoresButton testScores={handleTestScores} />
 		</div>

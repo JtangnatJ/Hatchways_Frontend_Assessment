@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;500;800&display=swap');
 
-#Search {
+.Search {
     display: flex;
     justify-content: center;
-    align-content: center;;
+    align-content: center;
 }
 
 input {
@@ -23,4 +23,5 @@ input::placeholder {
 
 input:focus {
     outline: none;
+    border-color: black;
 }

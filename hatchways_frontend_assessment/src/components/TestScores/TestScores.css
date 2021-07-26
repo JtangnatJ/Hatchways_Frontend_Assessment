@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;800&display=swap');
+
+.testScores {
+    font-family: Raleway;
+    font-weight: 200;
+    font-size: small;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.testGrade {
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    justify-content: space-between;
+}

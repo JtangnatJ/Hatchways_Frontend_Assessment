@@ -11,8 +11,8 @@ const TestScoresButton = (props) => {
 	};
 
 	return (
-		<div id="ButtonContainer">
-			<button id="TestScoresButton" type="button" onClick={handleClick}>
+		<div className="ButtonContainer">
+			<button className="testScoresButton" type="button" onClick={handleClick}>
 				{expanded ? '-' : '+'}
 			</button>
 		</div>

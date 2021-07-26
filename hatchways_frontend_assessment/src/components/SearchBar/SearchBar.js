@@ -14,7 +14,7 @@ const SearchBar = (props) => {
     };
 
 	return (
-		<div id="Search">
+		<div className="Search">
 			<input
 				type="text"
 				value={value}

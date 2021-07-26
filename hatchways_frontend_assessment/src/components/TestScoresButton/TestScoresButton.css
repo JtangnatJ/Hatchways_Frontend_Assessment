@@ -1,10 +1,10 @@
-#ButtonContainer {
+.ButtonContainer {
     display: flex;
     flex-direction: column;
-    align-self: flex-end;
+    justify-self: flex-end;
     height: 100%;
 }
 
-#TestScoresButton {
-    align-self: flex-start;
+.TestScoresButton {
+    justify-self: flex-start;
 }

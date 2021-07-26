@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import"./TestScores.css";
 
 const TestScores = (props) => {
 	const [displayed, setDisplayed] = React.useState(null);
@@ -7,9 +8,17 @@ const TestScores = (props) => {
         setDisplayed(props.showScores);
     }, [props.showScores]);
 
-    console.log('Test Scores', displayed);
-
-	return <div id="TestScores">{displayed ? <p>Hello</p> : <></>}</div>;
+	return <div className="testScores">{
+        displayed ? 
+        props.grades.map((grade, index) => (
+            <div className="testGrade">
+                <div>Test {index + 1}:</div>
+                <div>{grade}%</div>
+            </div>
+        ))
+        : 
+        <></>}
+        </div>;
 };
 
 export default TestScores;
