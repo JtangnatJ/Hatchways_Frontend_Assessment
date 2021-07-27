@@ -2,6 +2,7 @@ import React from "react";
 import "./Student.css";
 import TestScoresButton from "../TestScoresButton/TestScoresButton.js";
 import TestScores from "../TestScores/TestScores.js";
+import AddTagField from "../AddTagField/AddTagField.js";
 
 const Student = (props) => {
 	const student = props.student;
@@ -26,7 +27,11 @@ const Student = (props) => {
 				<div className="company"> Company: {student.company}</div>
 				<div className="skill">Skill: {student.skill}</div>
 				<div className="average">Average: {average}%</div>
+				<div className="average">Tags: {JSON.stringify(student.tags)}</div>
+				<div className="average">Id: {student.id}</div>
+
                 <TestScores showScores={displayTestScores} grades={grades} />
+                <AddTagField addTag={props.addTag} studentID={student.id} />
 			</div>
 			<TestScoresButton testScores={handleTestScores} />
 		</div>

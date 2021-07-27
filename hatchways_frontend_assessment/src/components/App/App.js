@@ -27,15 +27,29 @@ function App() {
 	};
 
     const tagSearch = (str) => {
+        // const taggedStudents = allStudents.filter((student) => {
+        //     return student.tags.includes(str);
+        // });
 
+        // setFilteredStudents(taggedStudents);
     };
+
+    const addTag = (id, tag) => {
+        // allStudents.forEach((student) => {
+        //     if (student.id === id) {
+        //         student.tag.push(tag);
+        //     }
+        // })
+        console.log('ID: ', id);
+        console.log('tag: ', tag);
+    }
 
 	return (
 		<div className="app">
 			<div id="AppWrapper">
 				<SearchBar searchHandler={studentSearch} placeholder={"Search by name"} />
 				<SearchBar searchHandler={tagSearch} placeholder={"Search by tag"} />
-				<StudentList students={filteredStudents || allStudents} />
+				<StudentList students={filteredStudents || allStudents} addTag={addTag} />
 			</div>
 		</div>
 	);

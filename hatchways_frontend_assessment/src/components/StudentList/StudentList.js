@@ -5,7 +5,7 @@ import "./StudentList.css";
 const StudentList = (props) => (
 	<div id="StudentList">
 		{props.students.map((student, index) => (
-			<Student student={student} key={index} />
+			<Student student={student} key={index} addTag={props.addTag} />
 		))}
 	</div>
 );
