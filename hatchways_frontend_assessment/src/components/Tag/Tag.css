@@ -1,0 +1,9 @@
+.tag {
+    background-color: lightgray;
+    margin: 2px;
+    padding: 5px;
+    border-radius: 10%;
+    font-family: 'Raleway';
+    font-size: small;
+    font-weight: 400;
+}

@@ -2,6 +2,7 @@ import React from "react";
 import "./Student.css";
 import TestScoresButton from "../TestScoresButton/TestScoresButton.js";
 import TestScores from "../TestScores/TestScores.js";
+import Tag from "../Tag/Tag.js";
 import AddTagField from "../AddTagField/AddTagField.js";
 
 const Student = (props) => {
@@ -16,6 +17,8 @@ const Student = (props) => {
         setDisplayTestScores(state);
     }
 
+    console.log(student);
+
 	return (
 		<div className="StudentInfo">
 			<div className="picWrapper">
@@ -28,6 +31,9 @@ const Student = (props) => {
 				<div className="skill">Skill: {student.skill}</div>
 				<div className="average">Average: {average}%</div>
                 <TestScores showScores={displayTestScores} grades={grades} />
+                <div className="tagsWrapper">{student.tags.map((tag, index) => (
+                    <Tag tag={tag} key={index} />
+                ))}</div>
                 <AddTagField addTag={props.addTag} studentID={student.id} />
 			</div>
 			<TestScoresButton testScores={handleTestScores} />
