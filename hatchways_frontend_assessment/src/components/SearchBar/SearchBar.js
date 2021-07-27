@@ -7,9 +7,7 @@ const SearchBar = (props) => {
 	const handleChange = (event) => {
         event.preventDefault();
         const searchTerm = event.target.value;
-
         setValue(searchTerm);
-
         props.searchHandler(searchTerm);
     };
 

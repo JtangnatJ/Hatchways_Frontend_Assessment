@@ -10,7 +10,6 @@ const AddTagField = (props) => {
 	};
 
 	const handleSubmit = (event) => {
-		console.log(value);
 		props.addTag(props.studentID, value);
 		setValue("");
 		event.preventDefault();
