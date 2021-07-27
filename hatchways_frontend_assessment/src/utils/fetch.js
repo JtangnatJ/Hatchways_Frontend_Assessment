@@ -4,6 +4,8 @@ export const fetchStudents = async () => {
     const updatedStudents = data.students.map((student) => {
         const fullName = student.firstName + " " + student.lastName
         student.fullName = fullName.toUpperCase();
+        const tags = [];
+        student.tags = tags;
         return student;
     });
 
