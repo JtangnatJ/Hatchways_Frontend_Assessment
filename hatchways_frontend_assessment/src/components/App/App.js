@@ -26,10 +26,15 @@ function App() {
         setFilteredStudents(foundStudents);
 	};
 
+    const tagSearch = (str) => {
+
+    };
+
 	return (
 		<div className="app">
 			<div id="AppWrapper">
-				<SearchBar searchHandler={studentSearch} />
+				<SearchBar searchHandler={studentSearch} placeholder={"Search by name"} />
+				<SearchBar searchHandler={tagSearch} placeholder={"Search by tag"} />
 				<StudentList students={filteredStudents || allStudents} />
 			</div>
 		</div>

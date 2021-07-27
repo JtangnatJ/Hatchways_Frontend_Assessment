@@ -19,7 +19,7 @@ const SearchBar = (props) => {
 				type="text"
 				value={value}
 				onChange={handleChange}
-				placeholder="Search by name"
+				placeholder={props.placeholder}
 			/>
 		</div>
 	);
