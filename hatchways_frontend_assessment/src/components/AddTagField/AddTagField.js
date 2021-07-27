@@ -20,6 +20,7 @@ const AddTagField = (props) => {
 		<div className="addTag">
 			<form onSubmit={handleSubmit}>
 				<input
+                    className="addTagInput"
 					type="text"
 					value={value}
 					onChange={handleChange}

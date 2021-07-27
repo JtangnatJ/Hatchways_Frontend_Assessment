@@ -1,0 +1,22 @@
+.addTag {
+    /* padding-top: 5px; */
+    padding-bottom: 10px;
+}
+
+.addTagInput {
+    border: none;
+    border-bottom: 1px solid silver;
+    padding-bottom: 5px;
+}
+
+.addTagInput::placeholder {
+    font-family: Raleway;
+    font-size: small;
+    font-weight: 300;
+    color: gray
+}
+
+.addTagInput:focus {
+    outline: none;
+    border-color: black;
+}
